@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="sample1.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $('.btn').mouseover(function(){
+                        $(this).css({
+                            left:(Math.random()*$(window).width()-20),
+                            top:(Math.random()*$(window).height()-20),      
+                        });
+                    });              
+            });
+        </script>
+    </head> 
+    <body>
+        <div class="btn" style="position: absolute">button</div>
+    </body>
+</html>
