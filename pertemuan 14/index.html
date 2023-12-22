@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+
+    <div class="mb-3">
+        <label for="pwd">Comments :</label>
+        <textarea name="text" id="comment" rows="3" class="form-control"></textarea>
+    </div>
+
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="col">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+    </div>
+    
+    
+    <div class="row mb-3">
+        <div class="col">
+            <label for="nama">Nama :</label>
+            <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama">
+        </div>
+        <div class="col">
+            <label for="nama">NIM</label>
+            <input class="form-control" type="text" name="nim" placeholder="Masukkan NIM">
+        </div>
+    </div>
+
+    <!-- PLAIN TEXT -->
+    <div>
+        <label for="pwd" class="mb-2">Plain Text:</label>
+        <input type="text" class="form-control-plaintext" id="plaintext" placeholder="Enter your wleowleo" name="plaintext">
+    </div>
+
+    <!-- SELECT LIST -->
+    <div class="mt-2">
+        <label for="form-select" class="form-label">Select list :</label>
+        <select name="select-list1" class="form-select" name="select-list1">
+            <option>MTI</option>
+            <option>DKV</option>
+            <option>SK</option>
+            <option>KAB</option>
+        </select>
+    </div>
+
+    <!-- SELECT LIST MULTIPLE -->
+    <div class="mt-2">
+        <label for="form-select" class="form-label">Select list Multiple:</label>
+        <select multiple name="select-multiple1" class="form-select" name="select-multiple1">
+            <option>MTI</option>
+            <option>DKV</option>
+            <option>SK</option>
+            <option>KAB</option>
+        </select>
+    </div>
+
+    <!-- CHOOSE FROM BROWSERS LIST -->
+    <div class="mt-2">
+        <label for="jurusans" class="form-label">Choose your browser from the list:</label>
+        <input class="form-control" list="jurusan" name="jurusans" id="jurusans">
+        <datalist id="jurusan">
+            <option value="MTI">
+            <option value="KAB">
+            <option value="DKV">
+            <option value="SK">
+            <option value="BD">
+        </datalist>
+    </div>
+
+    <!-- CHECKBOX -->
+    <div class="mt-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1">
+            <label class="form-check-label">Option 1</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check2" name="option2">
+            <label class="form-check-label">Option 2</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check3" name="option3">
+            <label class="form-check-label">Option 3</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check4" name="option4">
+            <label class="form-check-label">Option 4</label>
+        </div>
+    </div>
+
+    <!-- RADIO -->
+    <div class="mt-3">
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+            <label class="form-check-label" for="radio1">Option 1</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label" for="radio2">Option 2</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+            <label class="form-check-label">Option 3</label>
+        </div>
+    </div>
+
+    <!-- SWITCH -->
+    <div class="form-check form-switch mt-3">
+        <label for="" class="form-check-label"> Dark Mode Switch</label>
+        <input type="checkbox" class="form-check-input">
+    </div>
+       
+    <!-- CUSTOM RANGE -->
+    <div class="mt-3">
+        <label for="customRange" class="form-label">Custom Range</label>
+        <input type="range" class="form-range">
+    </div>
+    
+    <!-- INPUT GROUP -->
+    <label for="">Input Group</label>
+    <div class="input-group mb-3 mt-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" name="" id="" placeholder="Username">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" name="" id="" placeholder="Email">
+        <span class="input-group-text">@halo.com</span>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-primary mt-3 w-100">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>
